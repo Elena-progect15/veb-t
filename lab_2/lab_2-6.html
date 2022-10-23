@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <title>Кадалова Е.В. ПИ-22</title>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    
+<script type="text/javascript">
+
+    let two=0, three=0, one=0;
+    let all=0;
+    $(function(){
+        $("#two").click(function()
+            {
+            two++;
+            all++;
+            });
+        $("#three").click(function()
+            {
+            three++;
+            all++;
+            });
+$("#one").click(function()
+            {
+            one++;
+            all++;
+            });
+        
+    $("#button").click(function()
+        {
+            $('#two_res').css({ 'display': 'block' }).text('22: '+ two/all*100+"%");
+            $('#three_res').css({ 'display': 'block' }).text('23: '+ three/all*100+"%");
+$('#one_res').css({ 'display': 'block' }).text('21: '+ one/all*100+"%");
+            });
+        });
+</script>
+
+   </head>
+
+    <body>
+        <h1>Опрос</h1>
+    <form>
+        <div><span>Какая группа лучшая?</span></div>
+        <div>
+            <input type="radio" id="two" name="contact" value="two">
+            <label for="two">ПИ-22</label>
+            <input type="radio" id="three" name="contact" value="three">
+            <label for="three">ПИ-23</label>
+<input type="radio" id="one" name="contact" value="one">
+            <label for="one">ПИ-21</label>
+            </div>
+    <br>
+        <div>
+            <input type="button" id="button" value="Узнать результаты">
+
+        </div>
+</form>
+<p id="two_res"></p>
+<p id="three_res"></p>
+<p id="one_res"></p>
+ 
+</body>
+</html>
