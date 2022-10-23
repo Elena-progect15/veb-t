@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+
+<html>
+
+<title>2.3 Кадалова Е.В ПИ-22</title>
+
+<script src="jquery-3.6.0.js"></script>
+
+</head>
+
+<body>
+
+<style>
+
+#chel {
+
+position: absolute;
+
+left:50%;
+
+top:50%;
+
+}
+
+</style>
+
+<img src="https://funart.pro/uploads/posts/2021-07/1626962955_4-funart-pro-p-svinki-na-maldivakh-zhivotnie-krasivo-foto-6.jpg" width="200" height="150" id="chel"/>
+
+<script language="javascript" type="text/javascript">
+
+document.onkeydown = function checkKeycode(event)
+
+{
+
+var keycode;
+
+if(!event) var event = window.event;
+
+if (event.keyCode) keycode = event.keyCode; 
+
+else if(event.which) keycode = event.which;
+
+if (keycode==39) {
+
+$('#chel').animate({left: '+=20'},1000);
+
+}
+
+if (keycode==38) {
+
+$('#chel').animate({top: '-=20'},1000);
+
+}
+
+if (keycode==37) {
+
+$('#chel').animate({left: '-=20'},1000);
+
+}
+
+if (keycode==40) {
+
+$('#chel').animate({top: '+=20'},1000);
+
+}
+
+}
+
+</script>
+
+<br><h4>Кадалова Пи-22</h4></br>
+
+</html>
+

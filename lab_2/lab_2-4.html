@@ -1,0 +1,67 @@
+<html>
+
+<title>2.4 Кадалова Е.В ПИ-22</title>
+
+<head>
+
+<script type="text/javascript" src="jquery-3.6.0.js"></script>
+
+</head>
+
+<body>
+
+ <div class="block">
+
+     Подвигать здесь
+
+</div>
+
+<div class="coords">
+
+    X: <span class="x"></span><br>
+
+    Y: <span class="y"></span>
+
+</div> 
+
+ <script type="text/javascript">
+
+ document.querySelector('.block').onmousemove = function(event) {
+
+    event = event || window.event; // �����������������
+
+    console.log(event); // ����� � �������
+
+    document.querySelector('.x').innerHTML = event.offsetX;
+
+    document.querySelector('.y').innerHTML = event.offsetY;
+
+}
+
+</script>
+
+</body>
+
+ <style>.block {
+
+    width: 200px; /* ������ */
+
+    height: 150px; /* ������ */
+
+    border: 10px solid plum; /* ������� � ���� �������� ����� */
+
+    margin: 40px auto; /* ������ ������ � �������������� ������������ �� ������ */
+
+    text-align: center; /* ����� � ������ �� ����������� */
+
+    line-height: 150px; /* ����� � ������ �� ��������� */
+
+    font-size: 20px; /* ������ ������ */
+
+    font-family: sans-serif; /* ��������� ������� */
+
+</style>
+
+<h4>2.4 Кадалова Е.В ПИ-22</h4>
+
+</html>
